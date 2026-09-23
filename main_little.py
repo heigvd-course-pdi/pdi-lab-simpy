@@ -38,7 +38,7 @@ def main():
     print(f'Arrival rate: {1.0/mean(model.interarrival_times):.4f}')
     print(f'Mean service time: {mean(model.service_times):.4f}')
     print("---- Complete system -----")
-    print(f'Mean users in system: {mean(model.users_in_system):.4f} s')
+    print(f'Mean users in system: {mean(model.users_in_system):.4f}')
     print(f'Arrival rate: {1.0/mean(model.interarrival_times):.4f}')
     print(f'Mean response time: {mean(model.response_times):.4f} s')
 
