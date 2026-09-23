@@ -16,15 +16,6 @@ Using SimPy
 
 Follow the tutorial [SimPy in 10 minutes](https://simpy.readthedocs.io/en/latest/simpy_intro/index.html) to install SimPy and run the first examples.
 
-To accelerate the SimPy simulations you can optionally install PyPy, a faster Python interpreter: [PyPy installation](https://doc.pypy.org/en/latest/install.html). If you use PyPy, you need to add the SimPy and NumPy packages to PyPy:
-
-```bash
-pypy3 -m ensurepip
-pypy3 -m pip install simpy numpy
-```
-
-To run simulations with PyPy, use the `pypy3` command instead of `python3`.
-
 Simulation model
 ----------------
 
@@ -60,8 +51,7 @@ Read the code in `models/simpy_multiserver.py` and understand how the simulation
 Run the simulation model with the command:
 
 ```bash
-python3 ./main_little.py # Using normal Python
-pypy3 ./main_little.py   # Using PyPy to accelerate the simulation (may be slower for this model)
+python3 ./main_little.py
 ```
 
 The simulation prints statistics collected during the simulation.
